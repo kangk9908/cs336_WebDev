@@ -1,10 +1,13 @@
-<html>
-
 <!-- 
   Kun Kang (2301131)
   20 September 2022
   CS336 Assignment 2 - Styling with CSS
  -->
+ 
+<html>
+
+<!-- https://www.hostinger.com/tutorials/website/how-to-link-a-stylesheet-css-file-to-your-html-file -->
+<link rel="stylesheet" type="text/css" href="./assignment2.css" media=”screen” />
 
 <head>
   <meta charset="utf-8">
@@ -14,40 +17,38 @@
   <link rel="stylesheet" href="assignment2.css">
 </head>
 
-<body>
+<body class="body-wrapper">
   <div class="header">
     <div>
       <!-- <img ...>   Image in the middle horizontally. -->
+      <img class="calvin-logo" src="https://calvin.edu/dotAsset/902139a6-1201-4066-b60e-9f076f914793" />
     </div>
-    <div>
+    <div class="input-wrapper">
       <!-- search box on the right -->
+      <input type="text" placeholder="Search" />
     </div>
   </div>
-  <div>
+  <div class="navbar-wrapper">
     <!-- the ul and li below are for a menu bar with 6 items distributed across, horizontally -->
-    <ul>
-      <li>
-        About
-      </li>
-      <li>
-        Home
-      </li>
-      <li>
-        Register
-      </li>
-      <li>
-        Give
-      </li>
-      <li>
-        Take
-      </li>
-      <li>
-        Athletics
-      </li>
+    <ul class="navbar">
+      <li>About</li>
+      <li>Home</li>
+      <li>Register</li>
+      <li>Give</li>
+      <li>Take</li>
+      <li>Athletics</li>
     </ul>
   </div>
   <div>
     <!-- some text here -- doesn't matter what -- but it is centered and fairly large -->
+    <p>
+      Calvin’s logotype is called the nameplate and includes “Calvin” and “University” set in specific and unchanging
+      typographical styling and placements. The placement of “Calvin” and “University” varies depending on the logo
+      format but they always exist together. “Calvin” is a highly customized type treatment derived from the font
+      Constantia, demonstrating both tradition and progress, while “University” is set in a modified Gotham font. Unlike
+      the former nameplate for Calvin College, this nameplate is not designed to be used on its own, but in any of the
+      approved arrangements with the wayfinder.
+    </p>
   </div>
 </body>
 

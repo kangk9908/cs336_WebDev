@@ -1,0 +1,98 @@
+/* body general styling */
+.body-wrapper div {
+    /* setting display as "block" to take up whole width */
+    display: block;
+    /* setting items that don't take up whole width to be centered */
+    justify-content: center;
+}
+
+/* centering calvin logo horizontally */
+.calvin-logo {
+    /* setting width to take up only 65% */
+    width: 65%;
+    /* setting display as "block" to take up whole width */
+    display: block;
+    /* margins set to auto to change with size to be centered */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* search bar */
+input[type="text"] {
+    /* setting the search bar to the right */
+    margin-left: 85%;
+    /* setting the search bar to be halfway aligned with the calvin logo */
+    margin-top: -20%;
+    /* adding padding to give the search bar some breadth and depth */
+    padding: 8px;
+    /* setting the font size */
+    font-size: 15px;
+    /* setting the background color of the search bar */
+    background-color: rgb(216, 209, 209);
+    /* getting rid of the ugly border */
+    border: none;
+    /* giving the search bar round corners */
+    border-radius: 4px;
+}
+
+/* search bar text placeholder */
+::placeholder {
+    /* setting the font color */
+    color: black;
+}
+
+/* navbar wrapper */
+/* https://www.w3schools.com/css/css_navbar_horizontal.asp */
+.navbar-wrapper {
+    overflow: hidden;
+    background-color: maroon;
+    list-style-type: none;
+}
+
+/* navbar */
+/* https://www.w3schools.com/css/css_navbar_horizontal.asp */
+ul.navbar {
+    /* making sure there is no space outside the content border */
+    margin: 0;
+    /* making sure there is no space between the content and border */
+    padding: 0;
+    /* setting display as "block" to take up whole width */
+    display: block;
+    /* set text to be in the center */
+    text-align: center;
+}
+
+/* navbar li elements */
+/* set size of text in elements, set size to change with window size, set text to be  */
+ul.navbar li {
+    /* used inline-flex to set height and width of element and also to list horizontally */
+    display: inline-flex;
+    /* setting color */
+    color: white;
+    /* adding padding to height and width to make larger */
+    padding: 12px 18px;
+    /* setting font style to the first one that is supported*/
+    font-family: Arial, Helvetica, sans-serif;
+    /* setting all to capital letters */
+    text-transform: uppercase;
+    /* setting font size to change with window size */
+    font-size: 2vw;
+    /* setting font to be thicker */
+    font-weight: 400;
+}
+
+/* navbar elements color change on hover */
+li:hover {
+    /* setting the background color of content box */
+    background-color: rgb(108, 13, 13);
+}
+
+/* body paragraph */
+div>p {
+    /* aligning text to be centered */
+    text-align: center;
+    /* setting font size to change with window size */
+    font-size: 1.8vw;
+    /* setting font style to the first one that is supported*/
+    font-family: Arial, Helvetica, sans-serif;
+}
