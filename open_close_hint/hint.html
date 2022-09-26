@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="hint.css">
+<title>Hint</title>
+
+<body>
+    <h2>What is Life?</h2>
+    <p>
+        Looking at the title, you would think that the answer to the question, "What is life?" would be here.
+    </p>
+    <p>
+        That is a question you have to find the answer to through living life and understanding what has eternal return.
+    </p>
+    <p>
+        But, here is a hint that I made.
+    </p>
+    <sub>
+        <button id="text-button" onclick="showHint()">Click me to show hint :)</button>
+    </sub>
+
+    <script>
+        function showHint() {
+            // text to be displayed in value "hint" when in the showHint state
+            document.getElementById("hint-text").innerHTML = "Look how pretty. Click again if hint not helpful.";
+            // text to be dispalyed in value "text-button" when in the showHint state
+            document.getElementById("text-button").innerHTML = "Click me to hide hint :(";
+            document
+                .getElementById("text-button")
+                // when clicked, switch to hideHint state
+                .setAttribute("onclick", "hideHint()");
+        }
+        function hideHint() {
+            // text to be displayed in value "hint" when in the hideHint state
+            document.getElementById("hint-text").innerHTML = "";
+            // text to be dispalyed in value "text-button" when in the hideHint state
+            document.getElementById("text-button").innerHTML = "Click me to show hint :)";
+            document
+                .getElementById("text-button")
+                // when clicked, switch to showHint state
+                .setAttribute("onclick", "showHint()");
+        }
+    </script>
+    <p id="hint-text"></p>
+</body>
+
+</html>
