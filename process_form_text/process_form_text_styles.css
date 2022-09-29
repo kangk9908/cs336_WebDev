@@ -1,0 +1,21 @@
+textarea {
+    text-transform: uppercase;
+    height: 18vh;
+    width: 70vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 8vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    font-size: 4vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: block;
+    align-items: center;
+}
