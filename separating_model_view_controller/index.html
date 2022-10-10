@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>
+    Some Mysterious People
+  </title>
+  <!-- <link rel="stylesheet" href="style.css" type="text/css"> -->
+  <script src="dataService.js"></script>
+  <script src="populateTable.js"></script>
+</head>
+
+<body>
+  <h1>What dorm were these people in?</h1>
+  <table>
+    <thead>
+      <th>Name</th>
+      <th>Gender</th>
+      <th>Address</th>
+      <th>Age</th>
+      <th>Ph #</th>
+      <th>Picture</th>
+    </thead>
+    <tbody id="rows">
+      <tr>
+      </tr>
+    </tbody>
+  </table>
+
+  <button onclick="addDataRows()">Fetch Data</button>
+</body>
+
+</html>
